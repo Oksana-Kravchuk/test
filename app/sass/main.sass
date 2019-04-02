@@ -1,0 +1,82 @@
+.container
+    margin: 30px
+    font-family: 'Open Sans', sans-serif;
+
+
+.button
+    background: #36b61f
+    border-radius: 5px
+    border: none
+    padding: 10px
+    font-size: 16px
+    color: #fff
+    cursor: pointer
+    &:hover
+        background: #306427
+
+.modal
+    display: none
+    position: fixed
+    z-index: 1
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    overflow: auto
+    background-color: rgba(0,0,0,0.4)
+
+.popup
+    position: relative;
+    width: 400px
+    height: 300px
+    margin: 15% auto
+    border: 1px solid #888
+    border-radius: 5px
+    background: #fff
+    padding: 20px
+    animation-name: animatetop;
+    animation-duration: 0.8s 
+    &__body
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__close
+        cursor: pointer
+    &__picture
+        width: 150px
+    &__text
+        margin: 20px 0
+        font-size: 23px
+        color: #686464
+        text-align: center
+    &__cancel-app
+        width: 120px
+        height: 30px
+        background: none
+        border: 1.5px solid #cdc5c5
+        border-radius: 3px
+        font-weight: bold
+        color: #939292
+        box-sizing: border-box
+        margin-right: 15px
+        cursor: pointer
+    &__uninnstall-app
+        width: 120px
+        height: 30px
+        border-radius: 3px
+        background: red
+        border: none
+        font-weight: bold
+        color: #fff
+        cursor: pointer
+
+
+@keyframes animatetop 
+  from 
+    top: -300px
+    opacity: 0
+
+  to 
+    top: 0
+    opacity: 1
+  
